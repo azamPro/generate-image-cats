@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T2Q8KG0LGD"></script>
+    <script >
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-T2Q8KG0LGD");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate cat image</title>
+    <style>
+        body{
+            display: grid;
+            place-content: center;
+            text-align: center;
+            background-color: #fff;
+        }
+        .image img {
+            max-width: 600px;
+            max-height: 500px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;     
+           }
+           .title{
+            margin: 20px;
+           }
+        .title button{
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px solid #000;
+            background-color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+        }
+            .title button:hover{
+            background-color: #000;
+            color: #fff;
+            }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">
+            <h1>you love cats?</h1>
+            <p>this is your gift for you!</p>
+            <button id="btn">Generate cat image</button>
+        </div>
+        <div class="image">
+            <img src="" alt="" id="img">
+        </div>
+    </div>
+    
+    
+    <script src="api.js"></script>
+</body>
